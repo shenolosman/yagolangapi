@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .api-list {
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 600px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .endpoint {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-left: 5px solid #66bb6a;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ .Rubrik }}, API Endpoints</h1>
+    <div class="api-list">
+        <div class="endpoint"><a href="/">GET /</a></div>
+        <div class="endpoint"><a href="/api/employee">GET /api/employee</a></div>
+        <div class="endpoint"><a href="/api/employee/1">GET /api/employee/:id</a></div>
+        <div class="endpoint">PUT /api/employee/:id</div>
+        <div class="endpoint">DELETE /api/employee/:id</div>
+        <div class="endpoint">POST /api/employee</div>
+        <div class="endpoint"><a href="/api/employee">GET /api/employees</a></div>
+        <div class="endpoint"><a href="/api/addemployee">GET /api/addemployee</a></div>
+        <div class="endpoint"><a href="/api/addmanyemployees">GET /api/addmanyemployees</a></div>
+    </div>
+    <footer>
+        <p style="text-align: center;">&copy; Kubernetes Test</p>
+    </footer>
+</body>
+</html>
