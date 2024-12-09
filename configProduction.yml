@@ -10,7 +10,7 @@ database:
   sql-port: 3306
 
 redis:
-  server: "localhost:6379"
+  server: "myredisserver1:6379"
 
 sso:
   clientId:  ""
